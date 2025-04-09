@@ -6,19 +6,74 @@
     <title>Tati Tools</title>
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#409dad"> 
+
     <meta name="description" content="Herramientas útiles para usar día a día.">
-    <link rel="icon" type="image/png" href="img/instrumentos.png">
     
+    <meta property="og:title" content="Herramientas">
+    <meta property="og:description" content="Herramientas para el día a día">
+    <meta property="og:image" content="./img/Tati Tools.png">
+    <meta property="og:image:alt" content="Imagen de herramientas con el texto 'Tati Tools'">    
+
+    <link rel="icon" type="image/png" href="img/instrumentos.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Share+Tech+Mono&family=Sulphur+Point:wght@300;400;700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
     <header>
         <h1>Tati Tools</h1>
+        <a href="https://github.com/TatianaMezzano/TatiTools" target="_blank" rel="noreferrer"><img src="./img/github.png" title="Github" width="40" height="40" alt="Icono de github"></a>
     </header>
-    <main>
-
+    <main>        
+        <a href=""><img src="./img/calculadora.png" class="imagen" title="Calculadora" alt="Dibujo de calculadora"></a>
+        
+        <a href=""><img src="./img/dinero.png" class="imagen" title="Convertidor de monedas" alt="Dibujo de monedas"></a>
+        
+        <a href=""><img src="./img/m2.png" class="imagen" title="Convertidor de unidades de medida" alt="Dibujo de la unidad metro cuadrado"></a>
+        
+        <a href=""><img src="./img/list.png" class="imagen" title="Lista de tareas" alt="Dibujo de lista de tareas"></a>        
     </main>
-    <footer>
-        <p></p>
+
+    <hr>
+
+    <footer id="footer">
+        <dialog id="dialog">
+            <div class="cerrar-contenedor">
+                <img src="./img/cerrar.png" width="20" height="20" id="hide" alt="">
+            </div>
+            <ul class="list">
+                <li><a href="https://www.flaticon.es/iconos-gratis/llave-inglesa" target="_blank" rel="noreferrer" title="llave inglesa iconos">Llave inglesa iconos creados por Uniconlabs - Flaticon</a></li>
+                <li><a href="https://www.flaticon.es/iconos-gratis/github" target="_blank" rel="noreferrer" title="github iconos">Github iconos creados por Laisa Islam Ani - Flaticon</a></li>
+                <li><a href="https://www.flaticon.es/iconos-gratis/calculadora" target="_blank" rel="noreferrer" title="calculadora iconos">Calculadora iconos creados por Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.es/iconos-gratis/dinero" target="_blank" rel="noreferrer" title="dinero iconos">Dinero iconos creados por Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.es/iconos-gratis/m2" target="_blank" rel="noreferrer" title="m2 iconos">M2 iconos creados por Us and Up - Flaticon</a></li>
+                <li><a href="https://www.flaticon.es/iconos-gratis/evaluacion" target="_blank" rel="noreferrer" title="evaluación iconos">Evaluación iconos creados por Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.es/iconos-gratis/cerca" target="_blank" rel="noreferrer" title="cerca iconos">Cerca iconos creados por Freepik - Flaticon</a></li>
+            </ul>            
+        </dialog>
+
+        <p>Las imágenes utilizadas en esta página fueron extraídas de <a href="" id="mostrarModal">flaticon</a></p> 
+                
+        <script>
+            const dialog = document.getElementById('dialog');
+            const mostrar = document.getElementById('mostrarModal');
+            const hide = document.getElementById('hide');
+            
+            //Muestra el <dialog> al hacer clic en el enlace
+            mostrar.addEventListener('click', () => {
+            event.preventDefault();
+            dialog.showModal();  
+            });
+        
+            //Cierra el <dialog> cuando se hace clic en el botón "Cerrar"
+            hide.addEventListener('click', () => {
+                dialog.close();
+            });
+        </script>
     </footer>
 </body>
 </html>
