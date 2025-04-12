@@ -35,6 +35,11 @@ main{
 .imagen{
     width: 90%;
     height: auto;
+    transition-duration: 1s;
+}
+
+.imagen:hover{
+    scale: 1.2;
 }
 
 .contenedor-imagen{
@@ -42,7 +47,6 @@ main{
     justify-content: center;
 }
 
-/*****************************************************************************************/
 .cerrar-contenedor{
     display: flex;
     justify-content: right;
